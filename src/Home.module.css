@@ -1,0 +1,191 @@
+:root {
+  --app-header-height: 200px;
+  --app-footer-height: 130px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: var(--app-header-height);
+  padding-left: 2rem;
+  gap: 1rem;
+}
+
+.logo {
+  width: auto;
+  height: 132px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.phantLogo {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  border: solid 6px white;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  box-shadow: -12px -12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  font-family: 'AquireBold';
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 8px 12px rgba(0, 0, 0, 0.54);
+  margin-top: 1.5rem;
+}
+
+.text {
+  font-family: 'Poppins';
+  font-size: 1.8rem;
+  color: #787878;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.mainButton button {
+  font-family: 'Bauhaus-93';
+  font-size: 1.6rem;
+  color: black;
+  /* padding: 8px 16px; */
+  max-width: 260px;
+  height: 64px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: -6px -6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: var(--app-footer-height);
+  padding-right: 3rem;
+  gap: 1rem;
+}
+
+.socialTwitter {
+  font-size: 4rem;
+  color: white;
+  filter: drop-shadow(-8px -4px 8px rgba(0, 0, 0, .5));
+}
+
+.socialDiscord {
+  font-size: 2.6rem;
+  color: #A997D8;
+}
+
+.circleDiscord {
+  background-color: white;
+  padding: 8px;
+  border-radius: 50%;
+  filter: drop-shadow(-8px -4px 8px rgba(0, 0, 0, .5));
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    height: calc(100vh - var(--app-header-height) - var(--app-footer-height));
+  }
+
+  .phantLogo {
+    min-width: 320px;
+    min-height: 320px;
+    max-width: 320px;
+    max-height: 320px;
+    margin-right: 2rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .text {
+    font-size: 1.4rem;
+  }
+
+  .mainButton button {
+    font-size: 1.3rem;
+    width: 220px;
+    height: 56px;
+  }
+}
+
+@media (min-width: 992px) {
+  .phantLogo {
+    width: 360px;
+    height: 360px;
+    margin-right: 3rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .text {
+    font-size: 1.6rem;
+  }
+
+  .mainButton button {
+    font-size: 1.6rem;
+    width: 280px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .phantLogo {
+    min-width: 500px;
+    min-height: 500px;
+    margin-right: 4rem;
+  }
+
+  .rightpan {
+    max-width: 720px;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .text {
+    font-size: 1.8rem;
+  }
+
+  .mainButton button {
+    font-size: 1.6rem;
+    width: 320px;
+    height: 64px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .rightpan {
+    max-width: 840px;
+  }
+
+  .title {
+    font-size: 4.4rem;
+  }
+}
